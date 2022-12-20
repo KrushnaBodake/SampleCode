@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode
 {
-    public class Practic
+    public class AutoGenerate
     {
         private int srno;
         private int carno;
@@ -14,7 +14,7 @@ namespace SampleCode
         private int passingyear;
         private static int count;
 
-        public Practic(int carno,string colour,string model="swift")
+        public AutoGenerate(int carno,string colour,string model="swift")
         {
             count++;
             srno = count;

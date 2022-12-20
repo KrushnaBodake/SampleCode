@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode
 {
-    public class Array
+    public class Areey
     {
         /*static void Main(string[]args)
         {
@@ -24,7 +24,10 @@ namespace SampleCode
 
 
         }*/
-
+        internal static void Sort(char[] ch1)
+        {
+            throw new NotImplementedException();
+        }
     }
     class TwoDarray
     {

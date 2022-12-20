@@ -12,6 +12,11 @@ namespace SampleCode
         {
             Console.WriteLine("m1 Method");
         }
+        public void M2()
+        {
+            Console.WriteLine("m2 Method");
+        }
+
 
     }
     public static class ExtendedClass
@@ -24,12 +29,12 @@ namespace SampleCode
         {
             Console.WriteLine("Extended Method 2" + name);
         }
-       /* static void Main(string[] args)
+        static void Main(string[] args)
         {
             ExtendMethod m = new ExtendMethod();
             m.ExtentedMethod1();
             m.ExtentedMethod2("vikas");
-        }*/
+        }
     }
     
     
