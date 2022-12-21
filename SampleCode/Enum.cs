@@ -13,23 +13,25 @@ namespace SampleCode
         protected int empId;
         protected string empName;
         private Department dept;
+        private Department admin;
 
-        public Employe(int empId, string empName,Department dept)
+        public Employe(int empId, string empName,Department dept,Department admin)
         {
             this.empId = empId;
             this.empName = empName;
             this.dept = dept;
+            this.admin = admin;
         }
         public override string ToString()
         {
-            return $"employee Id {empId}, employee Name {empName}, Department {dept}";
+            return $"employee Id {empId}, employee Name {empName}, Department {dept}, Department {admin}";
 
         }
-      /*  static void Main(string[]args)
+        static void Main(string[]args)
         {
-            Employe e = new Employe(1, "Vishal", Department.Hr);
+            Employe e = new Employe(1, "Vishal", Department.Hr, Department.Admin);
             Console.WriteLine(e);
-        }*/
+        }
     }
    
     

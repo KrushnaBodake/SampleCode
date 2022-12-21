@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleCode.MaxNoRow</StartupObject>
+    <StartupObject>SampleCode.Employe</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,10 +65,12 @@
     <Compile Include="IPrintable.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="MaxNoRow.cs" />
+    <Compile Include="MoveZeros.cs" />
     <Compile Include="OOPs\Derived.cs" />
     <Compile Include="OOPs\Vehicle.cs" />
     <Compile Include="out.cs" />
     <Compile Include="OverLoading.cs" />
+    <Compile Include="PairsOfTwo.cs" />
     <Compile Include="Params.cs" />
     <Compile Include="Partial.cs" />
     <Compile Include="Partial2.cs" />
@@ -81,7 +83,7 @@
     <Compile Include="StackHashtable.cs" />
     <Compile Include="StaticUse\Staticclass.cs" />
     <Compile Include="StaticVar.cs" />
-    <Compile Include="String.cs" />
+    <Compile Include="StrngPallendrom.cs" />
     <Compile Include="StringBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
