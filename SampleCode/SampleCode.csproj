@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleCode.Employe</StartupObject>
+    <StartupObject>SampleCode.Coll.Printt</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,10 @@
     <Compile Include="Areey.cs" />
     <Compile Include="CircleArea.cs" />
     <Compile Include="Collectiom.cs" />
+    <Compile Include="Coll\Bank.cs" />
+    <Compile Include="Coll\Book.cs" />
+    <Compile Include="Coll\DisplayProducts.cs" />
+    <Compile Include="Coll\EmployeeDetails.cs" />
     <Compile Include="Coll\ProductList.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Dog.cs" />
