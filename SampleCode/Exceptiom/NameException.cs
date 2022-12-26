@@ -17,10 +17,7 @@ namespace SampleCode.Exceptiom
     {
         private string name;
 
-        public Stud()
-        {
-
-        }
+      
         public void AcceptName(string name)
         {
             if (name==null)

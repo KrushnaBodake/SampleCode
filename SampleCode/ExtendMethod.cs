@@ -16,8 +16,6 @@ namespace SampleCode
         {
             Console.WriteLine("m2 Method");
         }
-
-
     }
     public static class ExtendedClass
     {

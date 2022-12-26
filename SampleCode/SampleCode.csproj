@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleCode.Coll.Printt</StartupObject>
+    <StartupObject>SampleCode.ExtendedClass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,30 +50,35 @@
     <Compile Include="Annagram.cs" />
     <Compile Include="Areey.cs" />
     <Compile Include="CircleArea.cs" />
-    <Compile Include="Collectiom.cs" />
+    <Compile Include="Coll\Collectiom.cs" />
     <Compile Include="Coll\Bank.cs" />
     <Compile Include="Coll\Book.cs" />
     <Compile Include="Coll\DisplayProducts.cs" />
     <Compile Include="Coll\EmployeeDetails.cs" />
     <Compile Include="Coll\ProductList.cs" />
+    <Compile Include="DeligatAndEvent\Bank.cs" />
+    <Compile Include="DeligatAndEvent\Calculator.cs" />
+    <Compile Include="DeligatAndEvent\Event.cs" />
+    <Compile Include="DeligatAndEvent\Test.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Exceptiom\Catch.cs" />
     <Compile Include="Exceptiom\NameException.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="Fibon.cs" />
     <Compile Include="Generic.cs" />
-    <Compile Include="ImplementingClass.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="IPayble.cs" />
-    <Compile Include="IPrintable.cs" />
+    <Compile Include="Interfac\ImplementingClass.cs" />
+    <Compile Include="Interfac\Interface1.cs" />
+    <Compile Include="Interfac\IPayble.cs" />
+    <Compile Include="Interfac\IPrintable.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="MaxNoRow.cs" />
     <Compile Include="MoveZeros.cs" />
     <Compile Include="OOPs\Derived.cs" />
     <Compile Include="OOPs\Vehicle.cs" />
     <Compile Include="out.cs" />
-    <Compile Include="OverLoading.cs" />
+    <Compile Include="OOPs\OverLoading.cs" />
     <Compile Include="PairsOfTwo.cs" />
     <Compile Include="Params.cs" />
     <Compile Include="Partial.cs" />
@@ -84,7 +89,7 @@
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefOutParams.cs" />
-    <Compile Include="StackHashtable.cs" />
+    <Compile Include="Coll\StackHashtable.cs" />
     <Compile Include="StaticUse\Staticclass.cs" />
     <Compile Include="StaticVar.cs" />
     <Compile Include="StrngPallendrom.cs" />

@@ -8,13 +8,13 @@ namespace SampleCode
 {
     public class String1
     {
-      //  static void Main(string[] args)
-       //{
+        static void Main(string[] args)
+       {
             /* string str1 = "  Hello to All   ";
              Console.WriteLine(str1.Length);
 
              string str2 = "Welcome to Csharp";
-             //str1.Concat(str2);
+             str1.Concat(str2);
 
              string str = String.Concat(str1, str2);
              Console.WriteLine(str);
@@ -31,7 +31,7 @@ namespace SampleCode
              Console.WriteLine(str1.ToUpper());
              Console.WriteLine(str1.ToLower());
 
-             //Trim, TrimEnd, TimStart
+             Trim, TrimEnd, TimStart
              str1.Trim();
              Console.WriteLine(str1.Trim());
 
@@ -54,24 +54,24 @@ namespace SampleCode
 
 
 
-            /* string input = "KriShnA";
-             char[] charArray = input.ToCharArray();
+            string input = "KriShnA";
+            char[] charArray = input.ToCharArray();
 
-             for (int i = 0; i < charArray.Length; i++)
-             {
-                 if (char.IsUpper(charArray[i]))
-                 {
-                     charArray[i] = char.ToLower(charArray[i]);
-                 }
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                if (char.IsUpper(charArray[i]))
+                {
+                    charArray[i] = char.ToLower(charArray[i]);
+                }
 
-                 else
-                     charArray[i] = char.ToUpper(charArray[i]);
+                else
+                    charArray[i] = char.ToUpper(charArray[i]);
 
-             }
-             Console.WriteLine(string.Join("", charArray));*/
+            }
+            Console.WriteLine(string.Join("", charArray));
 
 
-           /* string s = "nitin";
+            string s = "nitin";
             string revs = "";
 
             for (int i = s.Length - 1; i >= 0; i--) //Revesrse
@@ -85,9 +85,9 @@ namespace SampleCode
             else
             {
                 Console.WriteLine("String is not Palindrome {0} and reverse string is {1}", s, revs);
-            }*/
+            }
 
-       // }
+        }
 
     }
    

@@ -10,6 +10,7 @@ namespace SampleCode
     {
         partial void Square(int a);
 
+
         //static void Main(string[] args)
         //{
         //    Calculator cal = new Calculator();

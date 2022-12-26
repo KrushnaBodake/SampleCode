@@ -1,7 +1,4 @@
-﻿using System;/* Console.WriteLine(d.colour = "red");
-            d.FuelType("petrol");
-            d.accelaration="speed";
-*/
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,16 +11,17 @@ namespace SampleCode.OOPs
         private string accelaration;
         private string gearchange;
 
-        public void FuelType(string fueltype)
+        public override void FuelType(string fueltype)
         {
             Console.WriteLine($"i am derived class fuel type is" + fueltype);
         }
 
         static void Main(string[] args)
         {
-            Derived d = new Derived();
+            Vehicle d = new Derived();
             d.FuelType("petrol");
-   
+            d.FuelType("petrol");
+
         }
     }
 

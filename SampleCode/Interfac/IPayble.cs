@@ -8,7 +8,6 @@ namespace SampleCode
 {
     public interface IOrder
     {
-
         string Display();
     }
 
@@ -28,14 +27,14 @@ namespace SampleCode
             return "Customer Details";
         }
 
-        //static void Main(string[]args)
-        //{
-        //    IOrder order = new Transcations();
-        //    Console.WriteLine(order.Display());
+        static void Main(string[] args)
+        {
+            IOrder order = new Transcations();
+            Console.WriteLine(order.Display());
 
-        //    ICustomer customer = new Transcations();
-        //    Console.WriteLine(customer.Display());
-        //}
+            ICustomer customer = new Transcations();
+            Console.WriteLine(customer.Display());
+        }
 
     }
   

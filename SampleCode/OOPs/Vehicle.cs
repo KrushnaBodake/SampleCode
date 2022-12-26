@@ -12,7 +12,7 @@ namespace SampleCode.OOPs
         protected private string model;
         protected private string company;
       
-        public void FuelType(string fueltype)
+        public virtual void FuelType(string fueltype)
         {
             Console.WriteLine("fuel type is and base class method "+fueltype);
         }

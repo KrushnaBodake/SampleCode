@@ -8,30 +8,29 @@ namespace SampleCode
 {
     public class Areey
     {
-        /*static void Main(string[]args)
+        static void Main(string[] args)
         {
-            int[] arr = new int[] { 4, 6, 8, 2, 0, 5, };
-          //  Console.WriteLine(arr[1]);
+            int[] arr = new int[] { 4, 6, 8, 2, 0, 5 };
+            //  Console.WriteLine(arr[1]);
 
-            int[] arr1 = { 1,2,3 };
+            int[] arr1 = { 1, 2, 3 };
 
             int[] arr2 = new int[3];
 
-           foreach(int a in arr)
-           {
+            
+           // Array.Sort(arr);
+            Array.Copy(arr, arr1, 1);
+            foreach (int a in arr1)
+            {
                 Console.WriteLine(a);
-           }
+            }
 
-
-        }*/
-        internal static void Sort(char[] ch1)
-        {
-            throw new NotImplementedException();
         }
+       
     }
     class TwoDarray
     {
-       /* static void Main(string[] args)
+        static void Main(string[] args)
         {
 
 
@@ -65,6 +64,6 @@ namespace SampleCode
                 }
                 Console.WriteLine();
             }
-        }*/
+        }
     }
 }
