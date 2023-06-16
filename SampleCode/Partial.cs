@@ -12,16 +12,13 @@ namespace SampleCode
         {
             return(a/b);
         }
-
+        
         partial void Square(int a)
         {
             Console.WriteLine(a * a);
         }
 
-        public void HelperMethod(int a)
-        {
-            Square(a);
-        }
+       
 
    }
 

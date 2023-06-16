@@ -51,6 +51,43 @@ namespace SampleCode.Exceptiom
 
         }
     }
-    
+    public class MarksException : Exception
+    {
+        public MarksException(String Message):base (Message)
+        {
 
+        }
+    }
+    public class Student
+    {
+        private int marks;
+        public void AcceptMarkks(int marks)
+        {
+            if(marks>100)
+            {
+                throw new MarksException("Marks can not be greater than 100");
+            }
+            else
+            {
+                this.marks = marks;
+                Console.WriteLine(marks);
+            }
+        }
+    }
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Student ss = new Student();
+                ss.AcceptMarkks(100);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        
+    }
 }

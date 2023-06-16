@@ -35,4 +35,54 @@ namespace SampleCode.StaticUse
 
         }
     }
+    public class Cha
+    {
+        public void Char1()
+        {
+            String s1 = "KrushnaKsrusKrK";
+            char[] ch = s1.ToCharArray();
+            Console.WriteLine(ch);
+
+            for (int i = 0; i <= ch.Length; i++)
+            {
+                int count = 1;
+                bool isvisit = false;
+
+                for (int k = i - 1; k >= 0; k--)
+                {
+                    if (ch[i] == ch[k])
+                    {
+                        isvisit = true;
+                        break;
+                    }
+                }
+
+                
+                if (isvisit == false)
+                {
+                    for (int j = i + 1; j < ch.Length; j++)
+                    {
+                        if (ch[i] == ch[j])
+                        {
+                            count++;
+                        }
+
+                    }
+                    Console.WriteLine(ch[i] + "" + count);
+                  /*  if (count >= 2)
+                    {
+                        Console.WriteLine(ch[i]);
+                        Console.WriteLine(ch[i] + "" + count);
+                    }*/
+                }
+
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            Cha c = new Cha();
+            c.Char1();
+        }
+    }
 }

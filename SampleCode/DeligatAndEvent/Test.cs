@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode.Deligat
 {
-    //Deligate
+    //Deligate Declarion
     public delegate int Mydele1(int n1, int n2);
     public delegate string Mydel2(string s);    
     public class Test
@@ -35,7 +35,7 @@ namespace SampleCode.Deligat
         {
             Test t = new Test();
             Mydele1 d1 = new Mydele1(t.M1);
-            d1 += new Mydele1(t.M3);
+            /*d1 += new Mydele1(t.M3);
             d1 += new Mydele1(t.M4);         // one delegate hold multiple methods references 
 
 
@@ -44,14 +44,14 @@ namespace SampleCode.Deligat
             {
                 Console.WriteLine(item.Method);
                 Console.WriteLine(item.DynamicInvoke(67,34));
-            }
+            }*/
 
-            Mydel2 d2 = new Mydel2(t.M2);
+            //Mydel2 d2 = new Mydel2(t.M2);
 
-           /* int sum = d1.Invoke(23, 45);
-            Console.WriteLine(sum);*/
+            int sum = d1.Invoke(23, 45);
+            Console.WriteLine(sum);
         }
         
-
     }
+
 }

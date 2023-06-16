@@ -24,13 +24,14 @@ namespace SampleCode.DeligatAndEvent
             {
                 InsufficientBal();
             }
-            else
+            else if(amt<=acbalance)
             {
                 acbalance =acbalance - amt;
-                if (acbalance == 0)
-                {
-                    Zero();
-                }
+                
+            }
+            if (acbalance == 0)
+            {
+                Zero();
             }
         }
         public void Credit(double amt)
@@ -70,80 +71,72 @@ namespace SampleCode.DeligatAndEvent
             b1.Debit(15000);
             Console.WriteLine(b1);
 
-            Console.WriteLine("debit 6000");
-            b1.Debit(6000);
+            Console.WriteLine("debit 6500");
+            b1.Debit(6500);
             Console.WriteLine(b1);
         }
     }
-
-    public delegate void Mydeleg();
-
-    public class Bank1
+   /* public delegate void MyDelegate();
+    public class ClassBank
     {
-        public event Mydeleg InsBalance;
-        public event Mydeleg Zero;
-        private double acbalance;
-        public void Debit(double debitamount)
-        {
-           if(acbalance<debitamount)
-           {
-                InsBalance();
+        public event MyDelegate InBal;
+        public event MyDelegate Zero;
 
-           }
-          else 
-           {
-                acbalance = acbalance - debitamount;
-                if (acbalance == 0)
-                {
-                    Zero();
-                }
-            }
-            
-        }
-        public void Credit(double creditamount)
-        {
-            acbalance = acbalance + creditamount;
-           
-        }
-        public Bank1(double acbalance)
+       private double acbalance;
+        public ClassBank(double acbalance )
         {
             this.acbalance = acbalance;
         }
+        public void Debit(int amt)
+        {
+            if(amt>acbalance)
+            {
+                InBal();
+            }
+            else
+            { acbalance = acbalance - amt; 
+                if(amt==acbalance)
+                {
+                    Zero();
+                }
+            }          
+        }
+        public void Credit(int amt)
+        {
+            acbalance = acbalance + amt;
+        }
         public override string ToString()
         {
-            return $"{acbalance}";
+            return $"current balance is { acbalance}";
         }
+
     }
-    public class Messagee
+    public static class Message
     {
-        public void InsufficientBalance()
+        public static void InsufficientBal()
         {
-            Console.WriteLine("Enter Valid Amount");
+            Console.WriteLine("Insufficient fund to withdraw");
         }
-        public void ZeroBalance()
+        public static void ZeroBalance()
         {
-            Console.WriteLine("Zero Balnce in Account");
+            Console.WriteLine("Current acc balance is Zero");
         }
+
     }
-    public class Mainmethod
-    {
+
+   public class Call
+   {
         static void Main(string[] args)
         {
-            Bank1 b = new Bank1(10000);
-            Messagee m = new Messagee();
-            b.InsBalance += new Mydeleg(m.InsufficientBalance);
-            b.Zero += new Mydeleg(m.ZeroBalance);
+            ClassBank b = new ClassBank(5000);
+            b.InBal += new MyDelegate(Message.InsufficientBal);
+            b.Zero += new MyDelegate(Message.ZeroBalance);
 
-            Console.WriteLine(b);
 
-            b.Debit(10000);
-            b.Credit(5000);
-
-            Console.WriteLine(b);
         }
-       
-        
-    }
+   }
+*/
+
 }
 
 

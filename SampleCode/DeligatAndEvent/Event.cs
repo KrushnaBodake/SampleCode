@@ -25,7 +25,7 @@ namespace SampleCode.DeligatAndEvent
             }
         }
     }
-    public static class Message
+    public static class Message1
     {
         public static void PassMessage()
         {
@@ -41,8 +41,8 @@ namespace SampleCode.DeligatAndEvent
         static void Main(string[] args)
         {
             EventStudent stud = new EventStudent();
-            stud.Pass += new MyDel(Message.PassMessage);
-            stud.Fail += new MyDel(Message.FailMessage);
+            stud.Pass += new MyDel(Message1.PassMessage);
+            stud.Fail += new MyDel(Message1.FailMessage);
 
             Console.WriteLine("Enter Marks");
             int n = Convert.ToInt32(Console.ReadLine());

@@ -8,11 +8,11 @@ namespace SampleCode.Coll
 {
    public enum Category { StoryBook, Adventures, Historical}
 
-   /* public class Category1
+    public class Category1
     {
         public string Categories { get; set; }
         public List<Book> Book1 = new List<Book>();
-    }*/
+    }
     public class Book
     {
         public int BookId { get; set; }
@@ -56,4 +56,5 @@ namespace SampleCode.Coll
             }
         }
     }
+
 }

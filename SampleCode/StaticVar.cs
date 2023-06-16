@@ -14,6 +14,7 @@ namespace SampleCode
 
         public StaticVar(string name, string country)
         {
+
             count++;
             rollno = count;
             this.name = name;
@@ -32,6 +33,20 @@ namespace SampleCode
             Console.WriteLine(s1);
            Console.WriteLine( count);
 
+        }
+    }
+    static class Stati  // i should not be Parent and child
+    {
+       static int a = 10;
+       static int b = 30;
+        /*public Stati()        // Static class does not have Constuctor
+        {
+
+        }*/
+        public static void Sta()   // only static Methods Available
+        {
+            int a = 10;
+          //  static int= 10;   // cant declare static members
         }
     }
 }

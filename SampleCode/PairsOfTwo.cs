@@ -26,7 +26,7 @@ namespace SampleCode
         static void Main(string[] args)
         {
                 int num = 7;
-                int[] a = new int[] { 4, 3, 7, 2, 5, 0 };
+                int[] a = new int[] { 4, 3, 7, 2, 5, 0,3,4 };
                 PairsOfTwo s = new PairsOfTwo();
                 s.Pair(a, num);
                 

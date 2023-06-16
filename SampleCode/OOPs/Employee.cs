@@ -23,13 +23,17 @@ namespace SampleCode
         protected private const int Max = 15500;
         protected private readonly int max;
 
-        public Employee(string empName, double basic,int max)
+        public Employee(string empName, double basic)
         {
             count++;
             empId = count;
-            this.max = max;
+            
             this.empName = empName;   // this refer to the data member
             this.basic = basic;
+        }
+        public void Method1()
+        {
+            Console.WriteLine("Parent method");
         }
         public virtual void CalSalary()
         {
@@ -42,7 +46,6 @@ namespace SampleCode
         public override string ToString()
         {
             return $"employee Id {empId}, employee Name {empName}, gross salary{gross}";
-
         }
        /* public string Print()
         {

@@ -77,7 +77,7 @@ namespace SampleCode.Coll
 
         static void Main(string[] args)
         {
-            List<Customer> list = new List<Customer>()
+            List<Customer> list2 = new List<Customer>()
             {
                 new Customer
                 {
@@ -103,7 +103,7 @@ namespace SampleCode.Coll
                 }
             };
 
-            foreach (Customer c in list)
+            foreach (Customer c in list2)
             {
                 Console.WriteLine($"{c.Name} ,{c.AccountType}");
                
@@ -119,6 +119,6 @@ namespace SampleCode.Coll
 
 
     }
-
+    
 
 }

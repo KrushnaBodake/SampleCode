@@ -22,8 +22,26 @@ namespace SampleCode.Coll
     {
         static void Main(string[] args)
         {
-            List<Categories> categories = new List<Categories>()
+            List<Categories> categories = new List<Categories>();
+            categories.Add(new Categories
             {
+                Category = "Mobile",
+                Product =
+                { new ProductDislay{ProductDetails="Samsung", ProductNo=23 , price=39999} ,
+                  new ProductDislay{ProductDetails="Xiomi", ProductNo=11 , price=49999}
+                }
+            });
+            categories.Add(new Categories
+            {
+                Category = "Furniture",
+                Product = {new ProductDislay { ProductDetails="Chair", ProductNo=234, price=3000},
+                    new ProductDislay { ProductDetails = "Chair", ProductNo = 234, price = 3000 }
+                }
+            });
+
+
+
+            /*{
                 new Categories
                 {
                     Category="Furniture",
@@ -43,9 +61,9 @@ namespace SampleCode.Coll
                     }
                    
                 }
-            };
+            };*/
 
-            foreach(Categories c in categories)
+            foreach (Categories c in categories)
             {
                 Console.WriteLine($"Category Type: {c.Category} ");
 

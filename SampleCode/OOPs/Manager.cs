@@ -9,12 +9,14 @@ namespace SampleCode
     public class Manager : Employee
     {
         private double food;
-        public Manager(string empName, double basic, int max, double food) : base(empName, basic, max)
+        public Manager(string empName, double basic,  double food) : base(empName, basic)
         {
             this.food = food;
         }
-
-       
+        public void Method2()
+        {
+            Console.WriteLine("Chid Method");
+        }
         public override void CalSalary()
         {
             hra = basic * 0.4;
@@ -42,7 +44,7 @@ namespace SampleCode
     public class SalesManager : Employee
     {
         private double commision;
-        public SalesManager(string empName, double basic, int max, double commision) : base(empName, basic, max)
+        public SalesManager(string empName, double basic, double commision) : base(empName, basic)
         {
             this.commision = commision;
         }
@@ -50,7 +52,7 @@ namespace SampleCode
 
         public override void CalSalary()
         {
-            hra = basic * 0.4;
+            hra = basic * 0.5;
             da = basic * 0.2;
             pf = basic * 0.12;
 
@@ -72,10 +74,32 @@ namespace SampleCode
 
 
     }
-
-
-
-
-
+    public class Str
+    {
+        static void Main(string[] args)
+        {
+            string[] str = { "Krushna", "Ganesh", "Tushar" };
+            string str1 = "";
+            Char[] ch = { 'a', 'b' };
+            string str2 = new string(ch);
+            for (int i = 0; i < str.Length; i++)
+            {
+                str1 = str1 +" " + str[i] ;
+               
+            }
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
+           
+            string str3 = "";
+            for (int i = 0; i < str1.Length; i++)
+            {
+                str3= str1[i] + str3;
+                
+            }
+            Console.WriteLine(str3);
+            Console.ReadLine();
+        }
+             
+    }
 }
 

@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace SampleCode
 {
     public enum Department { Hr=100,Admin=101,Sales=102,Developement,Testing}
-
     public class Employe
     {
         protected int empId;

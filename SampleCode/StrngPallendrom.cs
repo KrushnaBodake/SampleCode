@@ -10,68 +10,95 @@ namespace SampleCode
     {
         static void Main(string[] args)
        {
-            /* string str1 = "  Hello to All   ";
-             Console.WriteLine(str1.Length);
+            string str1 = "Hello to All";
+            Console.WriteLine("Length of String Hello to All "+ str1.Length);
 
-             string str2 = "Welcome to Csharp";
-             str1.Concat(str2);
+           
 
-             string str = String.Concat(str1, str2);
-             Console.WriteLine(str);
-             bool l = String.IsNullOrEmpty(str1);
-             Console.WriteLine(l);
+            string str2 = "Welcome to Csharp";
+            str1.Concat(str2);
 
-             bool b = str1.StartsWith("Hi");
-             Console.WriteLine(b);
+            string str = String.Concat(str1, str2);
+            Console.WriteLine("Caoncate Hellow to All + Welcome to C#:"+str);
 
-             Console.WriteLine(str2.EndsWith("Csharp"));
+            bool l = String.IsNullOrEmpty(str1);
+            Console.WriteLine("Hello to All is null;"+l);
 
-             Console.WriteLine(str2.Contains("Welcome"));
+            bool b = str1.StartsWith("Hi");
+            Console.WriteLine("Hello to All is start with Hi ;"+b);
 
-             Console.WriteLine(str1.ToUpper());
-             Console.WriteLine(str1.ToLower());
+            bool c = str2.EndsWith("Csharp");
+            Console.WriteLine("Welcome to cSharp end with Csharp;"+c);
 
-             Trim, TrimEnd, TimStart
-             str1.Trim();
-             Console.WriteLine(str1.Trim());
+            bool cc = str2.Contains("Welcome");
+            Console.WriteLine(" WelCOme to csharp contains welcome;"+cc);
 
+            String u = str1.ToUpper();
+            Console.WriteLine("Hello to all in UpeerCase;"+u);
+            String ll = str1.ToLower();
+            Console.WriteLine("Hello to all in Lower case;"+ll);
 
-             char[] ch = str1.ToCharArray();
+           // Trim, TrimEnd, TimStart
+             String t= str1.Trim();
+            Console.WriteLine("Trim Hello to all: "+t);
 
-             foreach (var c in ch)
-             {
-                 Console.WriteLine(c);
-             }
+            String te = str1.TrimEnd();
+            Console.WriteLine("Trim End hello to all:"+te);
 
-             string s = "TEST";
-             string s1 = "test";
+/*
+            char[] ch = str1.ToCharArray();
 
-             int i = String.Compare(s, s1);
-             Console.WriteLine(i);
-
-             bool t = str.Equals(str2);
-             Console.WriteLine(t);*/
-
-
-
-            string input = "KriShnA";
-            char[] charArray = input.ToCharArray();
-
-            for (int i = 0; i < charArray.Length; i++)
+            foreach (var c in ch)
             {
-                if (char.IsUpper(charArray[i]))
+                Console.WriteLine(c);
+            }*/
+
+            string s = "TEST";
+            string s1 = "test";
+
+            int i = String.Compare(s, s1);
+            Console.WriteLine("Compare two strings :"+ i);
+            Console.WriteLine("Compare to method:"+s.CompareTo(s1));
+
+            bool e = str.Equals(str2);
+            Console.WriteLine("Equals check two strings are equal "+e);
+
+            Console.WriteLine("SubString  hello to All;"+str.Substring(2, 7)); 
+
+            int j=str1.IndexOf('H');
+            Console.WriteLine("Returns the index of chatacter;"+j);
+
+            String ss1=str1.Remove(0, 3);
+            Console.WriteLine("Remove Nethod Hello to All(0 3):" + ss1);
+
+            
+        }
+
+    }
+    class S
+    {
+        static void Main(string[] args)
+        {
+
+            
+            string s = "KriShnA";
+            char[] ch = s.ToCharArray();
+
+            for (int i = 0; i < ch.Length; i++)
+            {
+                if (char.IsUpper(ch[i]))
                 {
-                    charArray[i] = char.ToLower(charArray[i]);
+                    ch[i] = char.ToLower(ch[i]);
                 }
 
                 else
-                    charArray[i] = char.ToUpper(charArray[i]);
+                    ch[i] = char.ToUpper(ch[i]);
 
             }
-            Console.WriteLine(string.Join("", charArray));
+            Console.WriteLine(string.Join("", ch));
 
 
-            string s = "nitin";
+          /*  string s = "nitin";
             string revs = "";
 
             for (int i = s.Length - 1; i >= 0; i--) //Revesrse
@@ -85,10 +112,8 @@ namespace SampleCode
             else
             {
                 Console.WriteLine("String is not Palindrome {0} and reverse string is {1}", s, revs);
-            }
-
+            }*/
         }
-
     }
    
 }

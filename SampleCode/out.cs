@@ -7,22 +7,25 @@ using System.Threading.Tasks;
 namespace SampleCode
 {
     public class Out
-    {      
-       /* static void Cal(int a, int b, out int sum, out int sub, out int multiply)
+    {
+        static void Cal(int a, int b, out int sum, out int sub, out int multiply)
         {
-            sum = a + b;
+           // a = 40;
+           // b = 30;
+            sum = a + b;  // out parameter must be initialize 
             sub = a - b;
             multiply = a * b;
         }
         
+
         static void Main(string[] args)
         {
-            int a = 23, b = 25, sum, sub, mul;
+            int a = 23, b = 25, sum, sub, mul;    // no need to initialize out parametr before passing
             Cal(a, b, out sum, out sub, out mul);
             Console.WriteLine(sum);
             Console.WriteLine(sub);
             Console.WriteLine(mul);
-        }*/
+        }
 
         static void AcceptNames(params string[] names )
         {

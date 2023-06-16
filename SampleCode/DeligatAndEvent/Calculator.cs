@@ -55,30 +55,30 @@ namespace SampleCode.DeligatAndEvent
             Console.WriteLine(sum);
 
 
-           /* Console.WriteLine("enter Value");
+            Console.WriteLine("enter Value");
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Substraction");
             Console.WriteLine("3. Multifaction");
-            Console.WriteLine( " Enter Option");
+            Console.WriteLine(" Enter Option");
             int option = Convert.ToInt32(Console.ReadLine());
 
-            switch(option)
+            switch (option)
             {
                 case 1:
-                 int sum= h.M1(a, b);
+                    int sm = h.M1(a, b);
                     Console.WriteLine(sum);
                     break;
 
                 case 2:
-                    int sub=h.M2(a, b);
+                    int sub = h.M2(a, b);
                     Console.WriteLine(sub);
                     break;
 
                 case 3:
-                   int m= h.M3(a, b);
+                    int m = h.M3(a, b);
                     Console.WriteLine(m);
                     break;
 
@@ -87,7 +87,7 @@ namespace SampleCode.DeligatAndEvent
                     break;
 
 
-            }*/
+            }
         }
     }
    

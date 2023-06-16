@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8388BA7C-30ED-4BEA-9701-24C9E3A82E19}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SampleCode</RootNamespace>
+    <RootNamespace>SampleCode.Exceptiom.Threadd</RootNamespace>
     <AssemblyName>SampleCode</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleCode.ExtendedClass</StartupObject>
+    <StartupObject>SampleCode.Exceptiom.Threadd.Ther</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,32 +50,43 @@
     <Compile Include="Annagram.cs" />
     <Compile Include="Areey.cs" />
     <Compile Include="CircleArea.cs" />
+    <Compile Include="Employeee.cs" />
+    <Compile Include="ClassAB.cs" />
+    <Compile Include="ClassABC.cs" />
     <Compile Include="Coll\Collectiom.cs" />
     <Compile Include="Coll\Bank.cs" />
     <Compile Include="Coll\Book.cs" />
+    <Compile Include="Coll\GenericPra.cs" />
+    <Compile Include="Coll\NonGenericPra.cs" />
     <Compile Include="Coll\DisplayProducts.cs" />
     <Compile Include="Coll\EmployeeDetails.cs" />
-    <Compile Include="Coll\ProductList.cs" />
+    <Compile Include="Coll\ProductListPra.cs" />
     <Compile Include="DeligatAndEvent\Bank.cs" />
     <Compile Include="DeligatAndEvent\Calculator.cs" />
     <Compile Include="DeligatAndEvent\Event.cs" />
     <Compile Include="DeligatAndEvent\Test.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Dog.cs" />
-    <Compile Include="Employee.cs" />
+    <Compile Include="FileSerlizaton\Stream.cs" />
+    <Compile Include="OOPs\Abstractio.cs" />
+    <Compile Include="OOPs\Employee.cs" />
     <Compile Include="Exceptiom\Catch.cs" />
     <Compile Include="Exceptiom\NameException.cs" />
+    <Compile Include="OOPs\Encap.cs" />
+    <Compile Include="Problemarr.cs" />
+    <Compile Include="Program6.cs" />
+    <Compile Include="Thre\Threadd\Test1.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="Fibon.cs" />
-    <Compile Include="Generic.cs" />
+    <Compile Include="Coll\Generic.cs" />
     <Compile Include="Interfac\ImplementingClass.cs" />
     <Compile Include="Interfac\Interface1.cs" />
     <Compile Include="Interfac\IPayble.cs" />
     <Compile Include="Interfac\IPrintable.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="OOPs\Manager.cs" />
     <Compile Include="MaxNoRow.cs" />
     <Compile Include="MoveZeros.cs" />
-    <Compile Include="OOPs\Derived.cs" />
+    <Compile Include="OOPs\Overiding.cs" />
     <Compile Include="OOPs\Vehicle.cs" />
     <Compile Include="out.cs" />
     <Compile Include="OOPs\OverLoading.cs" />
@@ -85,7 +96,7 @@
     <Compile Include="Partial2.cs" />
     <Compile Include="AutoGenerate.cs" />
     <Compile Include="Prod.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="OOPs\Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefOutParams.cs" />
@@ -98,5 +109,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

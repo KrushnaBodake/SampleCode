@@ -33,8 +33,6 @@ namespace SampleCode
         static void Main(string[] args)
         {
 
-
-
             int[,] arr = new int[4, 3];
             Console.WriteLine("enter 2d array elements");
             for (int i = 0; i < arr.GetLength(0); i++)
